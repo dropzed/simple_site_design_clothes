@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дизайнер одежды</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+<header>
+    <div class="social-links">
+        <a href="https://web.telegram.org/" target="_blank">
+            <img src="./assets/tg.png" alt="telegram" />
+        </a>
+        <a href="https://m.vk.com/" target="_blank">
+            <img src="./assets/vk.png" alt="VK" />
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <img src="./assets/linkedIn.png" alt="LinkedIn" />
+        </a>
+    </div>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#about" class="tooltip" data-tooltip="About me">Обо мне</a></li>
+            <li><a href="#gallery" class="tooltip" data-tooltip="Gallery">Галерея</a></li>
+            <li><a href="#contact" class="tooltip" data-tooltip="Contacts">Контакты</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <div class="section-content">
+        <h2>О нас</h2>
+        <p>Мы — дизайнеры одежды, создающие уникальные коллекции для каждого.</p>
+    </div>
+</section>
+
+<section id="gallery">
+    <div class="slider">
+        <h2>Галерея</h2>
+        <div class="slides">
+            <div class="slide"><img src="./assets/Frame_1.jpg" alt="Коллекция 1"></div>
+            <div class="slide"><img src="./assets/Frame_1.jpg" alt="Коллекция 2"></div>
+            <div class="slide"><img src="./assets/Frame_1.jpg" alt="Коллекция 3"></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="section-content">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами через соцсети:</p>
+        <ul>
+            <li><a href="https://web.telegram.org/" target="_blank" class="tooltip" data-tooltip="100k в канале">
+                Мой Telegram
+            </a></li>
+            <li><a href="https://m.vk.com/" target="_blank" class="tooltip" data-tooltip="10k подписчиков">
+                Мой VK
+            </a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" data-tooltip="10 лет опыта" class="tooltip">
+                Мой LinkedIn
+            </a></li>
+        </ul>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Дизайнер одежды | Все права защищены 100% лол</p>
+</footer>
+
+<script src="./scripts/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js"></script>
+</body>
+</html>

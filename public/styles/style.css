@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Плавная прокрутка */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Общие стили для header */
+header {
+    display: flex;
+    justify-content: space-between; /* Иконки соцсетей слева, а остальные элементы сдвигаются в стороны */
+    align-items: center;  /* Выравниваем элементы по центру вертикально */
+    background-color: #333;
+    color: white;
+    padding: 22px 20px;
+}
+
+/* Блок с иконками социальных сетей */
+.social-links {
+    display: flex;
+    gap: 20px; /* Расстояние между иконками */
+}
+
+.social-links a {
+    display: block;
+    width: 30px; /* Размер иконок */
+    height: 30px;
+}
+
+.social-links img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Эффект трансформации */
+}
+
+/* Эффект при наведении на иконки соцсетей */
+.social-links img:hover {
+    transform: scale(1.2); /* Увеличиваем иконку */
+    opacity: 0.8; /* Немного уменьшаем прозрачность при наведении */
+}
+
+/* Навигационное меню */
+nav {
+    flex-grow: 1;  /* Заставляет nav занимать оставшееся пространство */
+    display: flex;
+    justify-content: center;  /* Центрируем элементы навигации */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;  /* Размещаем элементы списка по горизонтали */
+    margin: 0;  /* Убираем отступы у списка */
+}
+
+nav ul li {
+    margin: 0 15px;  /* Добавляем отступы между пунктами меню */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;  /* Сделаем текст прописными буквами */
+}
+
+nav ul li a:hover {
+    color: #ff6347;  /* Цвет при наведении на ссылку */
+}
+
+/* Подсказки (tooltip) */
+.tooltip {
+    position: relative;
+}
+
+.tooltip[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+
+section {
+    padding: 40px 20px;
+}
+
+#about {
+    background-color: #ffffff;
+}
+
+#gallery {
+    background-color: #eeeeee;
+}
+
+#contact {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #ff6347;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для слайдера */
+.slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+img {
+    width: auto;
+    height: auto;
+    display: block;
+}
